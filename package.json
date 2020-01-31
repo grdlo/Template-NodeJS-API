@@ -1,0 +1,37 @@
+{
+  "name": "template-nodejs-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon --watch src -L src/app.js",
+    "coverage": "MONGOMS_DOWNLOAD_DIR=mongobinary nyc --reporter=html --reporter=text mocha --timeout 60000 --file test/setup.js test/**/*.js",
+    "start": "node src/app.js",
+    "lint": "eslint . --fix"
+  },
+  "author": "https://github.com/grdlo",
+  "license": "GNU",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "celebrate": "^10.0.1",
+    "config": "^3.2.4",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.2",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "morgan": "^1.9.1",
+    "uniqid": "^5.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "mocha": "^6.2.2",
+    "mongodb-memory-server": "^6.0.1",
+    "nodemon": "^1.19.4",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  }
+}

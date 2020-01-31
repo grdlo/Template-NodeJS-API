@@ -1,0 +1,12 @@
+{
+    "database": {
+        "uri": ""
+    },
+    "auth": {
+        "JWT_TOKEN": "P98NR01?1F2FI+)=àfuéà)ifé",
+        "tokenExpiration": "1h"
+    },
+    "app": {
+        "port": "3030"
+    }
+}
