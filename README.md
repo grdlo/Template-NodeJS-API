@@ -90,7 +90,7 @@ authenticator({ roles: [UserRole.ADMIN] })
 You must use a try and catch with contains `the entire route logic` the catch must be write like then for handling correctly all the thrown error:
 ```JavaScript
 try {
-
+    ...
 }  catch (err) {
     handleHttpError(err, res, next);
 }
