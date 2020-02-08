@@ -4,7 +4,7 @@
 
 # NodeJS API Template
 
-This template provide a full base for starting an API project, it containe a full working authentification system and a full working user routes system with Role
+This template provide you a full base for starting an API project, it contain a full working authentification system and a full working user routes system with Role
 
 ## Summury
 
@@ -16,7 +16,7 @@ This template provide a full base for starting an API project, it containe a ful
 
 ## Installation
 
-For using this project, please execute in terminal the following commands
+To use  this project, please execute in terminal the following commands
 
 ```Bash
 # Clone the template
@@ -24,7 +24,7 @@ $ git clone git@github.com:grdlo/Template-NodeJS-API.git
 # Remove template repostory
 $ rm -r .git
 ```
-The you can use it for you're own project by using the following commands for linking your git project :
+Then you can use it for your own project by using the following commands for linking your git project :
 ```Bash
 # Init your git folder
 $ git init
@@ -40,9 +40,9 @@ $ git remote -v
 $ git push origin master
 ```
 
-You can now develop your with the template base, for more information on how follow the used guide line of the template please check the **Development** Section
+You can now develop your API with the template base, for more information on how follow the used guide line of the template please check the **Development** Section
 
-You can user the following commands for launching the project (before starting, you need to define a mongodb uri in the config file `config/default.json`):
+You can use the following commands to launch the project (before starting, you need to define a mongodb uri in the config file `config/default.json`):
 ```Bash
 npm run coverage # Run the test coverage
 npm run start # Run the project 
@@ -87,7 +87,7 @@ authenticator({ roles: [UserRole.ADMIN] })
 
 #### Route content
 
-You must use a try and catch with contains `the entire route logic` the catch must be write like then for handling correctly all the thrown error:
+You must use a try and catch with contains `the entire route logic` the catch must be write like this for handling correctly all the thrown error:
 ```JavaScript
 try {
     ...
@@ -99,7 +99,7 @@ the route file must only call the multiple controller methods, you must never wr
 
 ### **2. adding Controllers**
 
-Controllers must be created in `src/controllers` with name of the top route name, you are free to write your methode as you like, but, you must throw error with the `https-error` package.
+Controllers must be created in `src/controllers` with name of the top route name, you are free to write your method as you like, but, you must throw error with the `https-error` package.
 
 ### **3. adding Models**
 
@@ -115,7 +115,7 @@ middlewares must be created in `src/middlewares` with the name of your choice, y
 
 ## Support
 
-If you found a bug, please [create an issue](https://github.com/grdlo/Template-NodeJS-API/issues) i will process it when possible.
+If you found a bug, please [create an issue](https://github.com/grdlo/Template-NodeJS-API/issues) and i will process it when i have time.
 
 ## Contribute
 
@@ -123,4 +123,4 @@ In case of any contents you would like to integrate into this template, please [
 
 ## Conclusion
 
-Thanks if you use this project, it's a 100% free project and i will not accept donation for this work, i use it myself and i was thinking it could be usefull for other developper, feel free to create all the things you want's
+Thanks if you use this project, it's a 100% free project and i will not accept donation for this work, i use it for myself and i was thinking it could be usefull for other developper, feel free to create all the things you want's
