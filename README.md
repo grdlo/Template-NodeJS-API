@@ -54,8 +54,8 @@ npm run dev # Run the project with nodemon
 ## Documentation
 
 The document is not, but i make a postman environnement & collection that you can use for create manual request on this template, you can found them in the `documentation` folder in the repository or download directly the file with this links :
-    - [Environnement](https://raw.githubusercontent.com/grdlo/Template-NodeJS-API/master/documentation/Template-NodeJS-API.postman_environment.json)
-    - [Collection](https://raw.githubusercontent.com/grdlo/Template-NodeJS-API/master/documentation/Template-NodeJS-API.postman_collection.json)
+- [Environnement](https://raw.githubusercontent.com/grdlo/Template-NodeJS-API/master/documentation/Template-NodeJS-API.postman_environment.json)
+- [Collection](https://raw.githubusercontent.com/grdlo/Template-NodeJS-API/master/documentation/Template-NodeJS-API.postman_collection.json)
 
 ## Development
 
