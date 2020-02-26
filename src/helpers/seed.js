@@ -8,7 +8,7 @@ const { UserRole } = require('../constants');
 const seedDatabase = async () => {
     const admin = await User.find({ role : UserRole.ADMIN});
     if (Array.isArray(admin) && admin.length === 0) {
-        const password = await bcrypt.hash('admin', 12);
+        const password = await bcrypt.hash('adminadmin', 12);
         await User.create({
             email: 'admin@admin.com',
             password: password,

@@ -116,7 +116,7 @@ Router.delete('/:id',
         try {
             const result = await userController.removeUser(req.params.id);
             /** Return the mongodb deletion result */
-            res.status(204).json({
+            res.status(200).json({
                 result
             });
         } catch (err) {

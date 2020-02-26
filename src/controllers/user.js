@@ -10,7 +10,7 @@ const User = require('../models/user');
  * Return all the user profile available in the database
  */
 exports.getUsers = () => {
-    return User.find(query)
+    return User.find()
         .then(users => Promise.all(users.map(user => user.view())));
 };
 
@@ -68,7 +68,7 @@ exports.updateUser = async (userId, updatedBody) => {
     return User.findById(userId)
         .then(user => {
             /** Throw error (handled in route) with not found http code */
-            if (!user) throw HTTPError.NotFound('user does not exist');
+            if (!user) throw HTTPError.NotFound('User does not exist');
             /** Updating field of the user object */
             const updatedUser = Object.assign(user, updatedBody);
             /** Updating user object in database */

@@ -32,3 +32,4 @@ data
 .nyc_output
 coverage
 mongobinary
+.package-lock.json

@@ -1,6 +1,6 @@
 {
     "database": {
-        "uri": ""
+        "uri": "mongodb+srv://<user>:<password>@<cluster>.mongodb.net/<repository>?retryWrites=true&w=majority"
     },
     "auth": {
         "JWT_TOKEN": "P98NR01?1F2FI+)=àfuéà)ifé",

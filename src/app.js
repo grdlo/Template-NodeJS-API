@@ -4,13 +4,12 @@ const mongoose = require('mongoose');
 
 /** custom import */
 const { setupApp } = require('./services/express');
-const seedHelper = require('./helpers/seed');
-
-const MONGODB_URI = config.get('database.uri');
 const app = setupApp();
 
-mongoose.set('debug', config.get('mongo.debug'));
+const seedHelper = require('./helpers/seed');
+
 /** Connecting mongodb service */
+const MONGODB_URI = config.get('database.uri');
 mongoose
     .connect(MONGODB_URI, { useNewUrlParser: true })
     .then(async () => {
